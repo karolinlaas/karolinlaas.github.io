@@ -154,12 +154,25 @@ h5 {
 
 .links {
 	display: grid;
-	grid-template-columns: 30px 30px 30px;
+	grid-template-columns: 35px 35px 35px;
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 10%;
 }
 
 .links svg {
-	fill: white;
+	fill: #FFFFFF;
+	transition: fill .2s linear;
+}
+
+.github svg:hover {
+	fill: #4078c0;
+}
+
+.linkedin svg:hover {
+	fill: #0077b5;
+}
+
+.facebook svg:hover {
+	fill: #3b5998;
 }
