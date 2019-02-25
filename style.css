@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: lowercase;
+}
+
+.first, .second, .third, .fourth {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.first, .fourth {
+	height: 100vh;
+}
+
+.second, .third {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+h4 {
+	font-size: 25px;
+	font-weight: 400;
+	padding-top: 15px;
+}
+
+h5 {
+	font-size: 25px;
+	font-weight: 400;
+	text-indent: 25px;
+}
+
+.left {
+	width: 50vw;
+	text-align: right;
+	padding-right: 10%;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+}
+
+.right {
+	width: 50vw;
+	padding: 5% 5% 5% 10%;
+	margin: 20vh 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	border-left: black solid 1px;
+}
+
+.second {
+	background-color: #D9D9D9;
+}
+
+.third {
+	background-color: #8C8C8C;
+}
+
+.fourth {
+	background-color: #262626;
+	color: #FFFFFF;
+}
+
+.column1 {
+	padding-right: 10%;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	text-align: right;
+	width: 33vw;
+}
+
+.column2 {
+	padding: 5% 5% 5% 5%;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	border-left: white solid 1px;
+	border-right: white solid 1px;
+	text-align: center;
+	width: 33vw;
+}
+
+.column3 {
+	padding-left: 7%;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	width: 33vw;
+}
+
+.column3 img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 34% 66% 66% 34% / 31% 25% 75% 69%;
+}
+
+.third .right {
+	display: grid;
+	grid-template-columns: 200px 200px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    justify-content: start;
+}
+
+.third .right img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: 30px 30px 30px;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.links svg {
+	fill: white;
+}
